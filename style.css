@@ -13,35 +13,109 @@ h1, h2, h3 {
   color: #fff;
 }
 
-.topo {
-  width: 100%;
+header {
   height: 70vh;
-  min-height: 360px;
+  background:
+    linear-gradient(to top, rgba(13, 13, 13, 0.95), rgba(13, 13, 13, 0) 50%),
+    url("img/banner.jpg") center / cover;
   display: flex;
-  align-items: flex-end;
-  color: #ffffff;
-
-/* parte feita com o auxilio de ia*/
-
-   background:
-    linear-gradient(to top, rgba(13,13,13,.9), rgba(13,13,13,.2)),
-    url("img/banner.jpg") center / cover,
-    linear-gradient(135deg, #2e2e2e, #0d0d0d);
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 6% 30px;
 }
 
-/* parte feita com o auxilio de ia*/
-.topo__conteudo { padding: 0 6% 56px; max-width: 800px; }
-.topo h1 { font-size: clamp(3rem, 9vw, 6rem); text-transform: uppercase; }
-.topo p { font-size: 1.25rem; margin-top: 12px; }
+header h1 {
+  font-size: 4rem;
+  color: #ff6a00;
+  text-transform: uppercase;
+}
 
-.menu {
-  position: sticky;   
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 6%;
-  background: #0d0d0d;
+header p {
+  color: #ffd60a;
+  font-size: 1.2rem;
+}
+
+nav {
+  background: #1c1c1c;
   border-bottom: 3px solid #ff6a00;
-  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  display: block;
+  padding: 16px 20px;
+  color: #ffffff;
+}
+
+nav a:hover {
+  background: #ff6a00;
+  color: #0d0d0d;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+section h2 {
+  color: #ff6a00;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  color: #d6d6d6;
+}
+
+article {
+  background: #2e2e2e;
+  border: 1px solid #3f3f3f;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+article h3 {
+  color: #ff6a00;
+  margin-bottom: 8px;
+}
+
+article p {
+  color: #ffd60a;
+  font-size: 0.95rem;
+} 
+
+section a {
+  display: inline-block;
+  background: #ff6a00;
+  color: #0d0d0d;
+  padding: 12px 26px;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+section a:hover {
+  background: #ffd60a;
+}
+
+footer {
+  background: #1c1c1c;
+  border-top: 3px solid #ff6a00;
+  color: #ffd60a;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
