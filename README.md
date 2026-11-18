@@ -18,4 +18,4 @@ A academia é muito mais do que um lugar para transformar o corpo: é um espaço
 - Rafael Coelho Dos Santos - RaffaCoelho
 - Guilherme Henrique Campos dos Santos - guiisantos1906-coder
 - Luiz Teixira de Paiva Neto - luizteixeira02
-- Kauã Lucas Farias de Souza - Fariaz02 · he/him
+- Kauã Lucas Farias de Souza - Fariaz02 
