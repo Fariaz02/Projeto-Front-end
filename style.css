@@ -2,15 +2,15 @@
 
 body {
     /*font-family:;*/
-   color: #EDEDED;
-  background: #121212;
+   color: #d6d6d6;
+  background: #0d0d0d;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
  /* font-family:;*/
   line-height: 1.1;
-  color: #EDEDED;
+  color: #fff;
 }
 
 header {
@@ -26,18 +26,18 @@ header {
 
 header h1 {
   font-size: 4rem;
-  color: #FF5A1F;
+  color: #ff6a00;
   text-transform: uppercase;
 }
 
 header p {
-  color: #FFC21A;
+  color: #ffd60a;
   font-size: 1.2rem;
 }
 
 nav {
-  background: #121212;
-  border-bottom: 3px solid #FF5A1F;
+  background: #1c1c1c;
+  border-bottom: 3px solid #ff6a00;
 }
 
 nav ul {
@@ -50,12 +50,12 @@ nav ul {
 nav a {
   display: block;
   padding: 16px 20px;
-  color: #EDEDED;
+  color: #ffffff;
 }
 
 nav a:hover {
-  background: #FF5A1F;
-  color: #121212;
+  background: #ff6a00;
+  color: #0d0d0d;
 }
 
 section {
@@ -65,37 +65,37 @@ section {
 }
 
 section h2 {
-  color: #FF5A1F;
+  color: #ff6a00;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 section p {
-  color: #EDEDED;
+  color: #d6d6d6;
 }
 
 article {
-  background: #121212;
-  border: 1px solid #EDEDED;
+  background: #2e2e2e;
+  border: 1px solid #3f3f3f;
   border-radius: 6px;
   padding: 20px;
   margin-bottom: 20px;
 }
 
 article h3 {
-  color: #FF5A1F;
+  color: #ff6a00;
   margin-bottom: 8px;
 }
 
 article p {
-  color: #FFC21A;
+  color: #ffd60a;
   font-size: 0.95rem;
 } 
 
 section a {
   display: inline-block;
-  background: #FF5A1F;
-  color: #121212;
+  background: #ff6a00;
+  color: #0d0d0d;
   padding: 12px 26px;
   border-radius: 4px;
   margin-top: 15px;
@@ -104,13 +104,13 @@ section a {
 }
 
 section a:hover {
-  background: #FFC21A;
+  background: #ffd60a;
 }
 
 footer {
-  background: #121212;
-  border-top: 3px solid #FF5A1F;
-  color: #FFC21A;
+  background: #1c1c1c;
+  border-top: 3px solid #ff6a00;
+  color: #ffd60a;
   text-align: center;
   padding: 30px 20px;
   font-size: 0.9rem;
