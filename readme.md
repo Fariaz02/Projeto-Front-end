@@ -1,1 +1,0 @@
-#kauã Lucas Farias#
