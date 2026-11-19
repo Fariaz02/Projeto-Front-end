@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACADEMIA UNIPE | Novo Cadastro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cadastro.css" />
+</head>
+<body>
+
+  <main class="app-shell">
+    <!-- Coluna Esquerda: Formulário de Cadastramento -->
+    <section class="register-section">
+      <div class="register-card">
+
+        <header class="brand-header">
+          <div class="top-nav">
+            <a href="index.html" class="back-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+              <span>Voltar ao Login</span>
+            </a>
+            <span class="step-badge">MATRÍCULA ONLINE</span>
+          </div>
+
+          <div class="logo-lockup">
+            <div class="logo-emblem" aria-hidden="true">
+              <a href="index.html" target="_blank" rel="noopener noreferrer">
+                  <image src="visual/logo-unipe.png" alt="" width="60" height="60" />
+                </a>
+            </div>
+            <div>
+              <h1 class="brand-name">ACADEMIA <span>UNIPE</span></h1>
+              <p class="brand-tagline">CRIE SUA CONTA DE ALUNO</p>
+            </div>
+          </div>
+        </header>
+
+        <form id="registerForm" class="register-form" novalidate>
+          <!-- Nome Completo -->
+          <div class="field-group">
+            <label for="fullName">Nome Completo</label>
+            <div class="input-box">
+              <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <input type="text" id="fullName" placeholder="Ex: Lucas Andrade Silva" required />
+            </div>
+            <span class="field-error" id="nameError"></span>
+          </div>
+
+          <!-- CPF e WhatsApp em 2 colunas -->
+          <div class="field-row">
+            <div class="field-group">
+              <label for="cpfInput">CPF</label>
+              <div class="input-box">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                  <line x1="7" y1="9" x2="17" y2="9"></line>
+                  <line x1="7" y1="13" x2="13" y2="13"></line>
+                </svg>
+                <input type="text" id="cpfInput" placeholder="000.000.000-00" maxlength="14" required />
+              </div>
+              <span class="field-error" id="cpfError"></span>
+            </div>
+
+            <div class="field-group">
+              <label for="phoneInput">WhatsApp</label>
+              <div class="input-box">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <input type="tel" id="phoneInput" placeholder="(83) 90000-0000" maxlength="15" required />
+              </div>
+              <span class="field-error" id="phoneError"></span>
+            </div>
+          </div>
+
+          <!-- E-mail -->
+          <div class="field-group">
+            <label for="emailInput">E-mail</label>
+            <div class="input-box">
+              <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <input type="email" id="emailInput" placeholder="voce@email.com" required />
+            </div>
+            <span class="field-error" id="emailError"></span>
+          </div>
+
+          <!-- Objetivo Principal -->
+          <div class="field-group">
+            <label>Objetivo Principal</label>
+            <div class="goal-pills" id="goalPills">
+              <button type="button" class="goal-pill active" data-goal="Hipertrofia">Hipertrofia</button>
+              <button type="button" class="goal-pill" data-goal="Emagrecimento">Emagrecimento</button>
+              <button type="button" class="goal-pill" data-goal="Condicionamento">Condicionamento</button>
+              <button type="button" class="goal-pill" data-goal="Saúde & Mobilidade">Saúde</button>
+            </div>
+          </div>
+
+          <!-- Senha e Confirmar Senha -->
+          <div class="field-row">
+            <div class="field-group">
+              <label for="passwordInput">Criar Senha</label>
+              <div class="input-box">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <input type="password" id="passwordInput" placeholder="Mín. 6 caracteres" required />
+                <button type="button" class="eye-toggle" data-target="passwordInput" aria-label="Mostrar senha">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </button>
+              </div>
+              <div class="strength-bar">
+                <div class="strength-fill" id="strengthFill"></div>
+              </div>
+              <span class="field-error" id="passError"></span>
+            </div>
+
+            <div class="field-group">
+              <label for="confirmPasswordInput">Confirmar Senha</label>
+              <div class="input-box">
+                <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <input type="password" id="confirmPasswordInput" placeholder="Repita a senha" required />
+              </div>
+              <span class="field-error" id="confirmError"></span>
+            </div>
+          </div>
+
+          <!-- Termos -->
+          <div class="terms-row">
+            <label class="custom-check">
+              <input type="checkbox" id="termsCheck" required />
+              <span>Li e aceito o regulamento interno e a política de privacidade da <strong>ACADEMIA UNIPE</strong>.</span>
+            </label>
+            <span class="field-error" id="termsError"></span>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="btn-label">FINALIZAR CADASTRO</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <footer class="register-footer">
+          <p>Já possui matrícula ativa? <a href="index.html">Fazer login agora</a></p>
+        </footer>
+
+      </div>
+    </section>
+
+    <!-- Coluna Direita: Seleção de Plano & Resumo -->
+    <aside class="plans-section">
+      <div class="glow-orb orb-orange"></div>
+      <div class="glow-orb orb-yellow"></div>
+      <div class="mesh-grid"></div>
+
+      <div class="plans-inner">
+        <span class="highlight-badge">ESCOLHA SEU PLANO DE TREINO</span>
+        <h2 class="plans-title">
+          COMECE HOJE <br />
+          <span class="accent-orange">SEM TAXA DE ADESÃO</span><span class="accent-yellow">.</span>
+        </h2>
+        <p class="plans-copy">
+          Selecione o plano ideal abaixo. Você pode alterar ou fazer upgrade a qualquer momento pelo aplicativo.
+        </p>
+
+        <!-- Cards Selecionáveis de Plano -->
+        <div class="plan-cards" id="planCards">
+          <div class="plan-card" data-plan="Mensal Flex" data-price="R$ 119,90/mês">
+            <div class="plan-header">
+              <div>
+                <span class="plan-name">MENSAL FLEX</span>
+                <p class="plan-sub">Sem fidelidade • Acesso total musculação</p>
+              </div>
+              <div class="plan-price">
+                <strong>R$ 119<span>,90</span></strong>
+                <small>/mês</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan-card selected" data-plan="UNIPE Black Anual" data-price="R$ 89,90/mês">
+            <div class="best-value-tag">MAIS ESCOLHIDO</div>
+            <div class="plan-header">
+              <div>
+                <span class="plan-name">UNIPE BLACK</span>
+                <p class="plan-sub">Musculação + Aulas Coletivas + Bioimpedância</p>
+              </div>
+              <div class="plan-price">
+                <strong>R$ 89<span>,90</span></strong>
+                <small>/mês</small>
+              </div>
+            </div>
+            <ul class="plan-perks">
+              <li>✓ Avaliação física trimestral inclusa</li>
+              <li>✓ Leve 1 convidado 4x ao mês</li>
+              <li>✓ App de treinos com vídeos demonstrativos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Resumo Dinâmico -->
+        <div class="summary-box">
+          <div class="summary-row">
+            <span>Plano selecionado:</span>
+            <strong id="summaryPlan" class="text-yellow">UNIPE Black Anual</strong>
+          </div>
+          <div class="summary-row">
+            <span>Objetivo:</span>
+            <strong id="summaryGoal">Hipertrofia</strong>
+          </div>
+          <div class="summary-row total">
+            <span>Mensalidade:</span>
+            <strong id="summaryPrice" class="text-orange">R$ 89,90/mês</strong>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal de Confirmação de Cadastro -->
+  <div class="modal-overlay hidden" id="successModal" aria-hidden="true">
+    <div class="modal-box">
+      <div class="success-icon">✓</div>
+      <span class="modal-kicker kicker-yellow">MATRÍCULA PRÉ-APROVADA</span>
+      <h3>Bem-vindo(a) à UNIPE!</h3>
+      <p id="successMessage">Seu cadastro foi concluído com sucesso.</p>
+      <div class="matricula-card">
+        <span>NÚMERO DE MATRÍCULA</span>
+        <strong id="generatedId">#UNIPE-2026-8492</strong>
+      </div>
+      <a href="index.html" class="btn-submit modal-btn">
+        <span class="btn-label">IR PARA O LOGIN</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>
