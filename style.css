@@ -249,4 +249,24 @@ body {
 .nav-classica .btn-laranja:hover {
   background-color: #e64810;
   transform: translateY(-1px);
+#filtros { margin: 16px 0; display: flex; gap: 8px; flex-wrap: wrap; }
+
+#filtros button {
+  background: #2a2a2a;
+  color: #EDEDED;
+  border: 0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#filtros button:hover { background: #3a3a3a; }
+#filtros .ativo { background: #FF5A1F; color: #121212; font-weight: 600; }
+
+#proxima { color: #FFC21A; font-weight: 600; }
+
+tr.hoje td { background: #1e1e1e; }
+tr.hoje td:first-child { border-left: 4px solid #FFC21A; }
+}
+
 }
