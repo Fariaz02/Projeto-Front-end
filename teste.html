@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    }
+
+    /* Topo com logo à esquerda e menu à direita */
+    .topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 32px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    }
+
+    .marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    }
+
+    .logo {
+    height: 40px;
+    width: auto;
+    display: block;
+    }
+
+    .nome-site {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+    }
+
+    /* Lista principal do menu */
+    .menu-lista {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    }
+
+    .menu-lista > li > a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 600;
+    padding: 10px 4px;
+    display: block;
+    transition: color 0.2s;
+    }
+
+    .menu-lista > li > a:hover {
+    color: #2563eb;
+    }
+
+    /* Item pai que segura o submenu */
+    .tem-submenu {
+    position: relative; /* Referência para o submenu absoluto */
+    }
+
+    /* Submenu em cascata (escondido inicialmente) */
+    .submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;          /* Cola logo abaixo do item pai */
+    left: 0;
+    min-width: 200px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    padding: 6px 0;
+    display: none;      /* Oculto por padrão */
+    z-index: 1000;      /* Fica acima do conteúdo da página */
+    }
+
+    /* Mostra o submenu ao passar o mouse (hover) ou focar com teclado */
+    .tem-submenu:hover .submenu,
+    .tem-submenu:focus-within .submenu {
+    display: block;
+    }
+
+    .submenu li a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #374151;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, color 0.2s;
+    }
+
+    .submenu li a:hover {
+    background-color: #f3f4f6;
+    color: #2563eb;
+    }
+</style>
+</head>
+<body>
+    <header class="topo">
+    <!-- Marca à esquerda -->
+    <a href="#" class="marca">
+        <img src="logo.png" alt="Logo" class="logo">
+        <span class="nome-site">Meu Site</span>
+    </a>
+
+    <!-- Menu de navegação à direita -->
+    <nav class="menu">
+        <ul class="menu-lista">
+        <li><a href="#">Início</a></li>
+
+        <!-- Item com submenu em cascata -->
+        <li class="tem-submenu">
+            <a href="#">Serviços ▾</a>
+            <ul class="submenu">
+            <li><a href="#">Desenvolvimento Web</a></li>
+            <li><a href="#">Design UI/UX</a></li>
+            <li><a href="#">Consultoria SEO</a></li>
+            </ul>
+        </li>
+
+        <li class="tem-submenu">
+            <a href="#">Produtos ▾</a>
+            <ul class="submenu">
+            <li><a href="#">Planos Mensais</a></li>
+            <li><a href="#">Templates</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+</body>
+</html>
