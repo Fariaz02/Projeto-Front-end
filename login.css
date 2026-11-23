@@ -82,18 +82,16 @@ div.img-logo {
   color: var(--laranja-vibrante); /* deita o texto lincado na cor laranja quando o mouse passa por cima */
 }
 .login-form {
-  max-width: 300px; /* define a largura máxima do formulário */
-  margin: 80px auto; /* centraliza o formulário horizontalmente e adiciona uma margem superior */
-  padding: 20px;
-  border-radius: 8px; /* arredonda os cantos do formulário */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* adiciona uma sombra ao formulário */
-  gap: 10px; /* define o espaçamento entre os elementos do formulário */
-  background:
-    linear-gradient(
-      135deg,
-      color-mix(in srgb, var(--laranja-vibrante) 40%, transparent),
-      color-mix(in srgb, var(--preto-carvao) 100%, transparent)
-      );
+  background-color: #222;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 400px;
+    border-radius: 15px;
+    border-top: #FF5A1F 5px solid;
+
+  }
+  h2{
+    text-align: center;
   }
 input{
   width: 100%; /* define a largura do input como 100% do contêiner pai */
