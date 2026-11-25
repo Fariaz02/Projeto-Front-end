@@ -5,15 +5,25 @@ body{
     text-align: center;
     color: #fff;
 }
-
+   section {
+    background-color: #222;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    border-top: 4px solid #ff571a;
+    box-shadow: 0 8px 20px #000;
 }
     table, th, td {
-     border: 1px solid red;
+     border: 1px solid #FF5A1F;
        
      width: 50%;
      margin: 0 auto;
      border-collapse: collapse;
-}
+}   
+    th{
+        color: #FFC21A;
+    }
 
     th, td {
      padding: 12px 16px;
@@ -27,14 +37,3 @@ body{
         width: center;
         margin: 20px auto;
     }
-   
-/* Quadrado do css 
-section {
-    background-color: #222;
-    max-width: 400px;
-    margin: 30px auto;
-    padding: 25px;
-    border-radius: 15px;
-    border-top: 4px solid #ff571a;
-    box-shadow: 0 8px 20px #000;
-} */
