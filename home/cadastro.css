@@ -4,6 +4,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header {
+  display: flex;
+  align-items: center;  
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--carvao);
+  border-bottom: 1px solid var(--laranja-vibrante);  
+}
+header span {
+  font-size: 1.60rem;
+  font-weight: bold;
+  color: var(--laranja-vibrante);
+  text-transform: uppercase;
+}
+div.img-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.texto-logo {
+  display: flex;
+  flex-direction: column; /* define a direção dos elementos filhos como coluna */
+  justify-content: center;
+}
 #cadastro {
     background-color: #222;
     padding: 20px;
