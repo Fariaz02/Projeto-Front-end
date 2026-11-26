@@ -20,44 +20,85 @@
         </div>
         <nav class="menu">
             <ul class="menu-lista">
-                <li><a href="home.html">Sobre</a></li>
-                <li><a href="CADASTRO E CONTATOS.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="CADASTRO.html">Contato</a></li>
                 <li><a href="Aulas.html">Aulas</a></li>
-                <li><a href="CADASTRO E CONTATOS.html">Cadastro</a></li>
+                
             </ul>
         </nav>
     </header>  
   </div>
-    <main>
-        <section>
-            <h2>titulo da apresentação sobre a academia</h2>
-            <p>aqui tem que botar aqueles textos classicos de motivção para a apresentação da academia</p>
-        </section>
-
-        <section>
-            <h2>pronto para começar?</h2>
-            <p>Crie sua conta ou conheça as aulas disponíveis.</p>
-            <div>
-                <a href="CADASTRO.HTML">fazer cadastro</a>
-                <a href="#aulas">conhecer as aulas</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <h3>Academia Unipe</h3>
-            <p>Rua fulano de tal, 123<br>Segunda a sexta: 5h às 22h<br>Sábado: 8h às 14h</p>
+     <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="tag">SAÚDE • FORÇA • PERFORMANCE</span>
+        <h1>Transforme sua rotina dentro do campus <span>UNIPÊ</span>.</h1>
+        <p>
+          Treinos personalizados, acompanhamento profissional e estrutura completa 
+          para estudantes, docentes e comunidade acadêmica.
+        </p>
+        <div class="hero-buttons">
+          <a href="../cadastro/CADASTRO.HTML" class="btn btn-primary btn-lg">Começar Agora</a>
+          <a href="../login/login.html" class="btn btn-secondary btn-lg">Acessar Meu Treino</a>
         </div>
 
-        <div>
-            <h3>links úteis</h3>
-            <ul>
-                <li><a href="#">sobre</a></li>
-                <li><a href="#">contato</a></li>
-                <li><a href="#">login</a></li>
-            </ul>
+        <div class="hero-stats">
+          <div>
+            <strong>+1.200</strong>
+            <span>Alunos ativos</span>
+          </div>
+          <div>
+            <strong>06h às 22h</strong>
+            <span>Seg a Sex</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Avaliação física</span>
+          </div>
         </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="card-highlight">
+          <span class="badge-yellow">NOVO</span>
+          <h3>Portal do Aluno</h3>
+          <p>Acompanhe sua ficha de treino A, B e C direto pelo celular ou computador.</p>
+          <ul>
+            <li>Fichas com imagens demonstrativas</li>
+            <li>Controle de séries, cargas e descanso</li>
+            <li>Agendamento rápido de avaliação</li>
+          </ul>
+          <a href="login.html" class="btn btn-primary full-width">Ir para o Login</a>
+        </div>
+      </div>
+    </div>
+  </section>
+   <section id="horarios" class="section section-alt">
+    <div class="container horarios-box">
+      <div>
+        <h2>Horários de <span>Funcionamento</span></h2>
+        <p>Organize seu treino entre as aulas ou no seu melhor horário do dia.</p>
+      </div>
+      <div class="horarios-list">
+        <div class="horario-item">
+          <span>Segunda a Sexta</span>
+          <strong>06:00 — 22:00</strong>
+        </div>
+        <div class="horario-item">
+          <span>Sábados</span>
+          <strong>08:00 — 13:00</strong>
+        </div>
+        <div class="horario-item">
+          <span>Domingos e Feriados</span>
+          <strong>Fechado</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    
+    <footer class="rodape">
+      <p>&copy; 2026 Academia UNIPE. Todos os direitos reservados.</p>
     </footer>
 
     <script src="home.js"></script>
