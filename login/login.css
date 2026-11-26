@@ -20,7 +20,7 @@ body {
       color-mix(in srgb, var(--preto-carvao) 10%, transparent),
       color-mix(in srgb, var(--laranja-vibrante) 40%, transparent)
     ),
-    url('visual/academia.jpg');
+    url('../visual/academia.jpg');
   background-size: cover; /*  faz a imagem de fundo cobrir toda a área do elemento */
   background-position: center; /* centraliza a imagem de fundo */
   background-repeat: no-repeat; /* evita que a imagem de fundo se repita */
@@ -147,17 +147,6 @@ label {
   color: var(--amarelo); /* muda a cor do link ao passar o mouse */
 
 }
-.rodape{
-  text-align: center; /* centraliza o texto do rodapé */
-  padding: 20px; /* adiciona um preenchimento interno ao rodapé */
-  background-color: var(--carvao); /* define a cor de fundo do rodapé */
-  color: var(--cinza-claro); /* define a cor do texto do rodapé */
-  font-size: 0.9rem; /* define o tamanho da fonte do rodapé */
-  position: fixed; /* fixa o rodapé na parte inferior da página */
-  bottom: 0; /* posiciona o rodapé na parte inferior da página */
-  width: 100%; /* define a largura do rodapé como 100% da página */
-  border-top: 1px solid var(--laranja-vibrante); /* adiciona uma borda superior ao rodapé */
-}
 .input-error {
   margin-bottom: 20px; /* adiciona uma margem inferior ao input de senha */
   padding-right: 4.5rem; /* adiciona um preenchimento à direita para o ícone de exibição de senha */
@@ -187,4 +176,15 @@ label {
   color: var(--cinza-claro); /* define a cor do texto do rodapé */
   font-size: 0.9rem; /* define o tamanho da fonte do rodapé */
   border-radius: 10px; /* arredonda os cantos do rodapé */
+}
+.rodape{
+  text-align: center; /* centraliza o texto do rodapé */
+  padding: 20px; /* adiciona um preenchimento interno ao rodapé */
+  background-color: var(--carvao); /* define a cor de fundo do rodapé */
+  color: var(--cinza-claro); /* define a cor do texto do rodapé */
+  font-size: 0.9rem; /* define o tamanho da fonte do rodapé */
+  position: fixed; /* fixa o rodapé na parte inferior da página */
+  bottom: 0; /* posiciona o rodapé na parte inferior da página */
+  width: 100%; /* define a largura do rodapé como 100% da página */
+  border-top: 1px solid var(--laranja-vibrante); /* adiciona uma borda superior ao rodapé */
 }
