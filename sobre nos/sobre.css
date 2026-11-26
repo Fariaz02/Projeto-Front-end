@@ -117,6 +117,18 @@ div.img-logo {
 #sobre a:hover {
     background-color: #FFC21A;
 }
+
+section {
+    background-color: #222;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    border-top: 4px solid #ff571a;
+    box-shadow: 0 8px 20px #000;
+    align-items: center;
+    text-align: center;
+}
 .rodape{
   text-align: center; /* centraliza o texto do rodapé */
   padding: 20px; /* adiciona um preenchimento interno ao rodapé */

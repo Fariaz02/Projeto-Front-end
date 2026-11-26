@@ -14,13 +14,14 @@
 }
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  background:
+  background-color: var(--preto-carvao);
+ /* background:
     linear-gradient(
       135deg,
       color-mix(in srgb, var(--preto-carvao) 10%, transparent),
       color-mix(in srgb, var(--laranja-vibrante) 40%, transparent)
     ),
-    url('../visual/academia.jpg');
+    url('../visual/academia.jpg');*/
   background-size: cover; /*  faz a imagem de fundo cobrir toda a área do elemento */
   background-position: center; /* centraliza a imagem de fundo */
   background-repeat: no-repeat; /* evita que a imagem de fundo se repita */
